@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addstudent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/purple_500">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:text="Add Student"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/round"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/user"
+                        android:drawablePadding="10dp"
+                        android:hint="FIRSTNAME"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/editTextLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextFirstName"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/user"
+                        android:drawablePadding="10dp"
+                        android:hint="LASTNAME"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/editFatherName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextLastName"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/user"
+                        android:drawablePadding="10dp"
+                        android:hint="FATHERNAME"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/editTextPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editFatherName"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/phoneno"
+                        android:drawablePadding="10dp"
+                        android:hint="PHONE"
+                        android:inputType="number"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/editTextAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextPhone"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/address"
+                        android:drawablePadding="10dp"
+                        android:hint="ADDRESS"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp"></EditText>
+
+                    <Spinner
+                        android:id="@+id/SpinnerCourse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextAddress"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawablePadding="10dp"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/SpinnerSelectYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SpinnerCourse"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawablePadding="10dp"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/SpinnerDepartment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SpinnerSelectYear"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawablePadding="10dp"></Spinner>
+
+                    <EditText
+                        android:id="@+id/editTextRollNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SpinnerDepartment"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/rollno"
+                        android:drawablePadding="10dp"
+                        android:hint="ROLLNO."
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp"></EditText>
+
+                    <Button
+                        android:id="@+id/RegisterButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextRollNo"
+                        android:layout_margin="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/roundbutton"
+                        android:text="Save"
+                        android:textColor="#808080"></Button>
+
+                    <Button
+                        android:id="@+id/Cancel_Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextRollNo"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="18dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/roundbutton"
+                        android:text="Cancel"
+                        android:textColor="#808080">
+
+                    </Button>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

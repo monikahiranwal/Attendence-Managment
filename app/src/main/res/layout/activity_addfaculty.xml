@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addfaculty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/purple_500">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:text="Add Faculty"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/round"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/user"
+                        android:drawablePadding="10dp"
+                        android:hint="FIRSTNAME"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/editTextLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextFirstName"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/user"
+                        android:drawablePadding="10dp"
+                        android:hint="LASTNAME"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/editTextPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextLastName"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/phoneno"
+                        android:drawablePadding="10dp"
+                        android:hint="PHONE"
+                        android:inputType="number"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/editTextAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextPhone"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/address"
+                        android:drawablePadding="10dp"
+                        android:hint="ADDRESS"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/USERNAME"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextAddress"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/user"
+                        android:drawablePadding="10dp"
+                        android:hint="USERNAME"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/USERNAME"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@mipmap/password"
+                        android:drawablePadding="10dp"
+                        android:hint="PASSWORd"
+                        android:inputType="textPassword"
+                        android:textColor="@color/Gray"
+                        android:textSize="20dp"></EditText>
+
+                    <Button
+                        android:id="@+id/RegisterButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Password"
+                        android:layout_margin="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/roundbutton"
+                        android:text="submit"
+                        android:textColor="#808080"></Button>
+
+                    <Button
+                        android:id="@+id/Cancel_Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Password"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="18dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/roundbutton"
+                        android:text="cancle"
+                        android:textColor="#808080">
+
+                    </Button>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

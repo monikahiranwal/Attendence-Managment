@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleStudent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/purple_500">
+
+            <TextView
+                android:id="@+id/studentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:hint="Name"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/round">
+                    <TextView
+                        android:id="@+id/studentFather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FatherName:-"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/purple_500"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/studentDataFather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="FatherName"
+                        android:textSize="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/Gray"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/studentRollNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/studentFather"
+                        android:text="RollNo:-"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/purple_500"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/studentDataRollNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="RollNo"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentDataFather"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/Gray"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/studentPhoneNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PhoneNo:-"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentRollNo"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/purple_500"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/studentDataPhoneNO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="PhoneNo"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentDataRollNo"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/Gray"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/studentAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address:-"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentPhoneNo"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/purple_500"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/studentDataAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentDataPhoneNO"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/Gray"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/studentCourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course:-"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentAddress"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/purple_500"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/studentDataCourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Course"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentDataAddress"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/Gray"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/studentDepartment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Department:-"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentCourse"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/purple_500"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/studentDataDepartment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Department"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentDataCourse"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/Gray"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/studentYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission Year:-"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentDepartment"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/purple_500"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/studentDataYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Year"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/studentDataDepartment"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/Gray"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/attendanceDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/studentYear"
+                        android:layout_marginTop="50dp"
+                        android:text="Attendance Details"
+                        android:background="@drawable/roundbutton"/>
+
+                </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

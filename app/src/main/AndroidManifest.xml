@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.attendancemnagement">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/attendance"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/attendance"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AttendanceMnagement">
+        <activity android:name=".AttendanceDetail"></activity>
+        <activity android:name=".SingleStudent" />
+        <activity android:name=".ViewTotalAttendance" />
+        <activity android:name=".viewAttendance" />
+        <activity android:name=".studentAttend" />
+        <activity android:name=".teacherpanel" />
+        <activity android:name=".viewstudentperameter" />
+        <activity android:name=".attendenceperstudent" />
+        <activity android:name=".viewfaculty" />
+        <activity android:name=".viewstudent" />
+        <activity android:name=".addhod" />
+        <activity android:name=".addfaculty" />
+        <activity android:name=".addstudent" />
+        <activity android:name=".AdminPanel" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

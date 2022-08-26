@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherpanel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/purple_500">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="WELCOME"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/selectCourse3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Course:-"
+            android:textColor="@color/Gray"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true" />
+
+        <Spinner
+            android:id="@+id/SpinnerCourse3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="10dp"
+            android:layout_alignParentRight="true"></Spinner>
+
+        <TextView
+            android:id="@+id/selectYear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Year:-"
+            android:textColor="@color/Gray"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/selectCourse3" />
+
+        <Spinner
+            android:id="@+id/SpinnerSelectYear3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SpinnerCourse3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"></Spinner>
+
+        <TextView
+            android:id="@+id/selectDepartment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Deparment:-"
+            android:textColor="@color/Gray"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/selectYear3" />
+
+        <Spinner
+            android:id="@+id/SpinnerDepartment3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SpinnerSelectYear3"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:layout_alignParentRight="true"></Spinner>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/Gray"
+            android:layout_below="@+id/selectDepartment3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@mipmap/calender"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/viewAttendance3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Attendence"
+            android:layout_below="@+id/date"
+            android:background="@drawable/roundbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+        <Button
+            android:id="@+id/viewTotalAttendence3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Total Attendence"
+            android:background="@drawable/roundbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/viewAttendance3"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/fetchStudents3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Attendence"
+            android:background="@drawable/roundbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/viewTotalAttendence3"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

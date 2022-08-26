@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendanceDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/purple_500">
+
+        <Spinner
+            android:id="@+id/searchLecture5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:drawablePadding="10dp"
+            android:background="@color/white">
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance Details"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="80dp">
+        <RelativeLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendence"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/TotalRecycler5"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/linear"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TotalLecture5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Lecture:-"
+            android:layout_below="@+id/TotalRecycler5"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/TotalLectureValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/TotalLecture5"
+            android:hint="00"
+            android:layout_below="@+id/TotalRecycler5"
+            android:textColor="@color/Gray"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/TotalPresent5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Present:-"
+            android:layout_below="@+id/TotalLecture5"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/TotalPresentValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_toRightOf="@+id/TotalPresent5"
+            android:layout_below="@+id/TotalLecture5"
+            android:textColor="@color/Gray"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"/>
+
+
+        <TextView
+            android:id="@+id/TotalAbsent5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Absent:-"
+            android:layout_below="@+id/TotalPresent5"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/TotalAbsentValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_toRightOf="@id/TotalAbsent5"
+            android:layout_below="@+id/TotalPresent5"
+            android:textColor="@color/Gray"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/Percentage5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present Percentage:-"
+            android:layout_below="@+id/TotalAbsent5"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/PercentageValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_below="@+id/TotalAbsent5"
+            android:layout_toRightOf="@id/Percentage5"
+            android:textColor="@color/Gray"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/roundbutton"
+        android:text="Back"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>
